@@ -76,6 +76,8 @@ div {
     border: 1px solid coral;
 }
 
+/* Layout */
+
 .dash-container {
     display: flex;
     flex-direction: column;
@@ -124,4 +126,24 @@ div {
 .sidebar-card-two {
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
+}
+
+.dash-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon > img {
+    height: 2em;
+    background-color: var(--yellow);
+    padding: 2px;
+    border-radius: 0px 1em 1em 0px;
+}
+
+.dash-icon > img {
+    height: 3em;
+    background-color: var(--yellow);
+    padding: 5px;
+    border-radius: 0px 1.5em 1.5em 0px;
 }
