@@ -60,10 +60,24 @@ h4, h5, h6 {
     border-radius: 4px;
 }
 
+button {
+    background-color: var(--blue);
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.usr-profile-pic img {
+    background-color: var(--yellow);
+}
+
+/* Layout */
+
 body, .main-container,
  .nav-container, .content-container,
  .content-items, .content-sidebar,
- .sidebar-card-one, .sidebar-card-two {
+ .sidebar-card-one, .sidebar-card-two,
+ .usr-section {
     display: grid;
 }
 
@@ -76,7 +90,6 @@ div {
     border: 1px solid coral;
 }
 
-/* Layout */
 
 .dash-container {
     display: flex;
@@ -146,4 +159,31 @@ div {
     background-color: var(--yellow);
     padding: 5px;
     border-radius: 0px 1.5em 1.5em 0px;
+}
+
+.usr-section {
+    grid-template-columns: 60% repeat(3, 1fr);
+}
+
+.usr-section .btn-div {
+    align-self: center;
+}
+
+button {
+    height: 30px;
+    width: 80px;
+    border-radius: 15px;
+}
+
+.usr-div {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    gap: 10px;
+}
+
+.usr-profile-pic img {
+    height: 6em;
+    padding: 5px;
+    border-radius: 3em;
 }
