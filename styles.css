@@ -71,6 +71,30 @@ button {
     background-color: var(--yellow);
 }
 
+.content-icons {
+    background-color: var(--grey);
+}
+
+.tegan {
+    background-color: #E0F2FE;
+}
+
+.morgan {
+    background-color: var(--yellow);
+}
+
+.kendall {
+    background-color: #919699;
+}
+
+.alex {
+    background-color: #FDA4AF;
+}
+
+p {
+    font-weight: 900;
+}
+
 /* Layout */
 
 body, .main-container,
@@ -86,9 +110,7 @@ body {
     height: 100vh;
 }
 
-div {
-    border: 1px solid coral;
-}
+
 
 
 .dash-container {
@@ -104,7 +126,7 @@ div {
 }
 
 .main-container {
-    grid-template-rows:18% 1fr;
+    grid-template-rows:10% 1fr;
 }
 
 .nav-container {
@@ -119,7 +141,7 @@ div {
 
 .content-items {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:10%  repeat(3, 1fr);
+    grid-template-rows:5%  repeat(3, 1fr);
     gap: 20px;
 }
 .content-items-header {
@@ -127,7 +149,7 @@ div {
 }
 
 .content-sidebar {
-    grid-template-rows: repeat(2, 10% 1fr);
+    grid-template-rows: repeat(2, 5% 1fr);
     gap: 20px;
 }
 
@@ -199,6 +221,9 @@ button {
     align-items: center;
     justify-content: end;
     padding-right: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    border-radius: 25px 0px 0px 25px;
 }
 
 .content-icons div img {
@@ -208,4 +233,29 @@ button {
 
 [src="./assets/icons/share.svg"] {
     transform: rotate(-90deg);
+}
+
+.sidebar-card-one div {
+    margin: 10px;
+}
+
+.sidebar-card-one > div:nth-child(2) {
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-inline: none;
+}
+
+.card-two-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card-two-img {
+    border-radius: 1.5em;
+}
+
+.card-two-img img {
+    height: 3em;
+    padding: 5px;
 }
