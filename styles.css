@@ -118,6 +118,11 @@ p {
     text-decoration: underline;
 }
 
+.icon > img:hover {
+    background-color: var(--yellow);
+    padding-left: 30px;
+}
+
 /* Layout */
 
 body, .main-container,
