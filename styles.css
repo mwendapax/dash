@@ -123,6 +123,15 @@ p {
     padding-left: 30px;
 }
 
+.content-item:hover {
+    .content-icon-para {
+        border-color: rgba(25, 146, 212, .5);
+    }
+}
+
+.card-two-item:hover {
+    border-color: rgba(25, 146, 212, .5);
+}
 /* Layout */
 
 body, .main-container,
